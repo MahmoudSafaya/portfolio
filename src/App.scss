@@ -1,0 +1,311 @@
+
+@import './style/variables';
+
+header{
+  padding: $twenty 0px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 40px $lightShadow;
+  .logo{
+    .img-div{
+      width: 60px;
+      height: 60px;
+      margin-right: 10px;
+      border: 5px solid $charcoal;
+      border-radius: 50%;
+      background: url('./images/Mahmoud_50.jpg') center center/cover;
+    }
+  }
+  h4{
+    color: $charcoal;
+  }
+  @media screen and (min-width: $tablet) {
+    .img-div{
+      width: 80px !important;
+      height: 80px !important;
+    }
+    .name-title{
+      width: 100%
+    }
+    h4,h5{font-size: 22px;}
+  }
+}
+
+nav{
+  padding: $twenty 0px;
+  li{
+    a{
+      color: $persianGreen;
+      font-weight: bold;
+      
+
+      &.active{
+        color: $charcoal;
+        font-size: 18px;
+        text-decoration: underline;
+        text-decoration-color: $orangeYellow;
+      }
+    }
+  }
+}
+
+.content{
+  margin: 60px 0px;
+  @media screen and (min-width) {
+    margin: 80px 0px;
+  }
+}
+
+.portfolio{
+  .projects{
+    margin: 40px 0px;
+    width: 100%;
+    h1{
+      color: $charcoal;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .projects-view{
+      width: 100%;
+      display: grid;
+      grid-template-rows: 1fr;
+
+      @media screen and (min-width: $tablet) {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+  
+      .project{
+        position: relative;
+        width: 80%;
+        min-height: 200px;
+        margin: 20px auto;
+        padding: 15px;
+        background: $lightShadow;
+        border-radius: 10px;
+        display: grid;
+        box-shadow: 0 0 80px $lightShadow;
+  
+        &:hover{ 
+          .details{
+            width: 100%;
+          }
+        }
+  
+        .pro-img{
+          width: 100%;
+          height: 100%;
+          border-radius: 10px;
+        }
+  
+        .details{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 0%;
+          height: 100%;
+          z-index: 99;
+          border-radius: 10px;
+          background: rgba(0,0,0,0.3);
+          overflow: hidden;
+          transition: all 0.2s linear;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          box-shadow:inset 1px 1px 30px $lightWhite,
+          inset -1px -1px 30px $lightWhite;
+          
+          h4{
+            color: $white;
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          a{
+            position: relative;
+            color: $white;
+            background: $charcoal;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.3s linear;
+            &::before,
+            &::after{
+              position: absolute;
+              content: '';
+              width: 2%;
+              height: 0px;
+              background: $charcoal;
+              transition: all 0.3s linear;
+            }
+            &::before{top:0;left:0}
+            &::after{bottom:0;right:0}
+
+            &:hover{
+              background: $lightWhite;
+              color: $charcoal;
+              text-decoration: none;
+              box-shadow: inset 0px 0px 10px $lightGray,
+               inset -1px -1px 10px $lightShadow;
+            }
+            &:hover::before,
+            &:hover::after{
+              width: 100%;
+              height: 3px;
+            }
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+.about{
+  h1{
+    color: $charcoal
+  }
+  .gray-bg{
+    width: 100%;
+    background: $lightWhite;
+    padding: 20px;
+    margin: 80px 0px;
+    border-radius: 10px;
+
+    @media screen and (min-width: $tablet) {
+      padding: 60px;
+    }
+
+    section{
+      position: relative;
+      padding: 20px;
+      color: $charcoal;
+      background: $white;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 40px $lightGray;
+      transition: all 0.3s linear;
+      
+      &:hover{
+        background: $charcoal;
+        color: $white;
+      }
+
+      h2{
+        color: $sandyBrown
+      }
+  
+      // &.personal-info{
+      // }
+      // &.education-info{
+      // }
+      &.skills{
+        &:hover li{
+          color: $white
+        }
+        ul{
+          list-style: square;
+          margin: 20px 0px;
+          li{
+            display: block;
+            margin: 10px 0px; 
+            color: black;
+            &:last-of-type{
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+      p{
+        margin: 10px 0px;
+        line-height: 1.5;
+        word-spacing: 3px;
+      }
+    }
+  }
+}
+
+.contact{
+  h1{
+    color: $charcoal
+  }
+  .contact-form{
+    width: 90%;
+    margin: 40px auto;
+    padding: 20px;
+    background: $lightWhite;
+
+    @media screen and (min-width: $tablet) {
+      width: 80%;
+    }
+    @media screen and (min-width: 920px) {
+      width: 60%;
+    }
+
+    h2{
+      text-align: center;
+      margin: 20px 0;
+      color: $persianGreen;
+    }
+    input,textarea{
+      border: none;
+      outline: none;
+      padding: 10px 15px;
+      width: 100%;
+      border-radius: 5px;
+      margin: 10px 0px;
+      box-shadow: 0 0 10px $lightShadow;
+    }
+    input{
+      opacity: 0.8;
+      float: none;
+      &.half{
+        width: 47%;
+        &:nth-of-type(2){
+          float: right;
+        }
+      }
+    }
+    textarea{
+      min-height: 150px;
+    }
+    button{
+      min-width: 120px;
+      padding: 10px 25px;
+      margin-top: 20px;
+      border-radius: 5px;
+      background: $persianGreen;
+      color: $white;
+      cursor: pointer;
+      box-shadow: 0 0 20px $lightShadow;
+      transition: all 0.2s linear;
+      &:hover{
+        background: $charcoal;
+        box-shadow: inset 0 0 20px $lightShadow,
+        inset -1px -1px 20px $lightShadow;
+      }
+    }
+
+  }
+}
+
+
+footer{
+  padding-bottom: 60px;
+  
+  .social-media{
+    ul li{
+      margin: 0px 20px;
+      transition: all 0.3s linear;
+      &:hover{
+        transform: translateY(-3px);
+      }
+      a{
+        color: $charcoal;
+        font-size: 24px;
+        box-shadow: 0 0 15px $lightShadow;
+        
+        &:hover{
+          color: $persianGreen;
+        }
+      }
+    }
+  }
+}
