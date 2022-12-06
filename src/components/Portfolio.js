@@ -9,7 +9,7 @@ const Portfolio = () => {
   return (
     <div className='portfolio'>
       <section className='projects'>
-        <h1 className='flex'>Here are some of my projects <BsArrowRight /></h1>
+        <h1 className='flex'>Projects <BsArrowRight /></h1>
         <div className='projects-view'>
           {bigPro.map(pro => {
             const {id, name, url, image} = pro;

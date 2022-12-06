@@ -1,5 +1,6 @@
 import React from 'react'
 import {BsArrowRight} from "react-icons/bs";
+import Resume from '../assets/MahmoudSafayaResume.pdf'
 
 const About = () => {
   return (
@@ -10,7 +11,7 @@ const About = () => {
           <h2>Personal</h2>
           <div className='inner-container'>
             <div>
-              <p>I'm an professional Web Developer. Experience in Frontend techniques and user interface application. I have a Computer Science degree. I'm passionate about Web Development and seeking to build a very good career and establish myself in this field.
+              <p>I'm a professional Web Developer. Experience in Frontend techniques and user interface applications. I have a Bachelor's degree in Computer Science. I'm passionate about Web Development and seeking to build a my career and establish myself in this field.
               </p>
             </div>
           </div>
@@ -34,10 +35,12 @@ const About = () => {
               <li>HTML5 - CSS3</li>
               <li>javaScript - ES6</li>
               <li>React.js</li>
+              <li>Redux.js</li>
               <li>Bootstarp - SASS</li>
+              <li>TailwindCSS</li>
               <li>JSON - AJAX</li>
-              <li>GIT- GITHUB</li>
-              <li><a href='https://drive.google.com/file/d/1KzgfsNLW3Nb_smPOHKgVf5AncTaqj_eG/view?usp=sharing'>My Resume</a></li>
+              <li>GIT - GITHUB</li>
+              <li><a href={Resume} download='MahmoudSafayaResume.pdf' target='_blank'>My Resume</a></li>
             </ul>
           </div>
         </section>
