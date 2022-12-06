@@ -32,15 +32,16 @@ header{
 
 nav{
   padding: $twenty 0px;
+  .navbar-items{
+    justify-content: center;
+    align-items: center;
+  }
   li{
     a{
       color: $persianGreen;
       font-weight: bold;
-      
-
       &.active{
         color: $charcoal;
-        font-size: 18px;
         text-decoration: underline;
         text-decoration-color: $orangeYellow;
       }

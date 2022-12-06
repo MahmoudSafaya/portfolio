@@ -9,7 +9,7 @@ const Header = () => {
           </div>
           <div className='name-title flex flex-column'>
             <h4>Mahmoud Safaya</h4>
-            <h5 className='perGreen'>Front End Developer</h5>
+            <h5 className='perGreen'>Front End Developer - React.js</h5>
           </div>
         </div>
       </div>

@@ -10,15 +10,15 @@ const Navbar = () => {
   // const newNavItems = navItems.filter(item => item !== active);
 
   const [count, setCount] = useState(1);
-  const reRender = () => {setCount(count + 1)}
+  const reRender = () => { setCount(count + 1) }
 
   useEffect(() => {
     let pathname = window.location.pathname;
-    if(pathname === '/'){
+    if (pathname === '/') {
       setActive('/');
-    } else if(pathname === '/about'){
+    } else if (pathname === '/about') {
       setActive('about')
-    } else if(pathname === '/contact'){
+    } else if (pathname === '/contact') {
       setActive('contact')
     }
   }, [count]);
@@ -27,24 +27,18 @@ const Navbar = () => {
     <nav className='navbar'>
       <div className='container'>
         <Router>
-          <div className='flex flex-between'>
-            <div>
-              <ul>
-                <li><Link className={`${active === '/' ? 'active' : ''}`} to={'/'} onClick={reRender}>
-                  Portfolio
-                </Link></li>
-              </ul>
-            </div>
-            <div>
-              <ul>
-                <li><Link to={'/about'} className={`${active === 'about' ? 'active b-m-h' : 'b-m-h'}`} onClick={reRender}>
-                  About
-                </Link></li>
-                <li><Link to={'/contact'} className={`${active === 'contact' ? 'active' : ''}`} onClick={reRender}>
-                  Contact
-                </Link></li>
-              </ul>
-            </div>
+          <div className='flex navbar-items'>
+            <ul>
+              <li><Link className={`${active === '/' ? 'active' : ''}`} to={'/'} onClick={reRender}>
+                Portfolio
+              </Link></li>
+              <li><Link to={'/about'} className={`${active === 'about' ? 'active b-m-h' : 'b-m-h'}`} onClick={reRender}>
+                About
+              </Link></li>
+              <li><Link to={'/contact'} className={`${active === 'contact' ? 'active' : ''}`} onClick={reRender}>
+                Contact
+              </Link></li>
+            </ul>
           </div>
 
           <div className='content'>
