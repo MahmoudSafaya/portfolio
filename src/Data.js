@@ -32,13 +32,13 @@ const bigProjects = [
   {
     id: 6,
     name: 'Starred Github Repos',
-    url: 'https://starred-github-repos.herokuapp.com/',
+    url: 'https://starred-github-repos-one.vercel.app/',
     image: 'https://i.ibb.co/Pr6R54q/repos-min.jpg'
   },
   {
     id: 7,
     name: 'Save A Link',
-    url: 'https://save-a-link.herokuapp.com/',
+    url: 'https://save-link-bice.vercel.app/',
     image: 'https://i.ibb.co/dWFC4LY/333837430sst1630904197.jpg'
   },
   {
