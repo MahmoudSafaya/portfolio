@@ -11,7 +11,7 @@ const About = () => {
           <h2>Personal</h2>
           <div className='inner-container'>
             <div>
-              <p>I'm a professional Web Developer. Experience in Frontend techniques and user interface applications. I have a Bachelor's degree in Computer Science. I'm passionate about Web Development and seeking to build a my career and establish myself in this field.
+              <p>I'm a junior front-end developer with more than 2 years of experience. I have a bachelor's degree in Computer Science. <br />Currently, I'm working at <b>AMS Alafaf Medical</b> Company, but I'm seeking new opportunities.
               </p>
             </div>
           </div>
@@ -21,7 +21,7 @@ const About = () => {
         <section className='education-info'>
           <h2>Education</h2>
           <div className='inner-container'>
-            <p><b>College: </b> Faculty of Computers and Information</p>
+            <p><b>College: </b> Faculty of Computer and Information</p>
             <p><b>From:</b> 2018 <b>To:</b> 2022</p>
             <p><b>Department:</b> Computer Science</p>
           </div>
@@ -40,7 +40,10 @@ const About = () => {
               <li>TailwindCSS</li>
               <li>JSON - AJAX</li>
               <li>GIT - GITHUB</li>
-              <li><a href={Resume} download='MahmoudSafayaResume.pdf' target='_blank'>My Resume</a></li>
+              <li>
+                {/* <a href={Resume} download='MahmoudSafayaResume.pdf' target='_blank' className='mr-20'>Download my Resume</a> */}
+                <a href='https://drive.google.com/file/d/1uXYXK9vLKt5zU4z8ZUm6Z6WqH1GR4rtc/view?usp=sharing' target='_blank'>Check out my Resume</a>
+                </li>
             </ul>
           </div>
         </section>

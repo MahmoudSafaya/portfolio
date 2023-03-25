@@ -30,13 +30,13 @@ const Navbar = () => {
           <div className='flex navbar-items'>
             <ul>
               <li><Link className={`${active === '/' ? 'active' : ''}`} to={'/'} onClick={reRender}>
-                Portfolio
+                Projects
               </Link></li>
               <li><Link to={'/about'} className={`${active === 'about' ? 'active b-m-h' : 'b-m-h'}`} onClick={reRender}>
-                About
+                About Me
               </Link></li>
               <li><Link to={'/contact'} className={`${active === 'contact' ? 'active' : ''}`} onClick={reRender}>
-                Contact
+                Contact Me
               </Link></li>
             </ul>
           </div>

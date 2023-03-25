@@ -22,7 +22,7 @@ const Contact = () => {
       showAlert(true, '#fcd4da', 'Please, complete the form below');
       return false;
     } else {
-      emailjs.sendForm('service_f50zxua', 'template_8jy3h3s', e.target, 'user_yvMGPemf5p53Ykr7f6RNo')
+      emailjs.sendForm('service_rbkqd83', 'template_t8ph4pw', e.target, 'c0RG-hnM945CswC7e')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
@@ -30,7 +30,9 @@ const Contact = () => {
       });
       e.target.reset();
 
-      showAlert(true, '#14ff5d85', 'Thanks for your message');
+      setTimeout(() => {
+        showAlert(true, '#14ff5d85', 'Thanks for your message');
+      }, 1500);
     
     }
   }

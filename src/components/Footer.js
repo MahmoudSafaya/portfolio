@@ -17,7 +17,7 @@ const Footer = () => {
             <li><a href='https://www.instagram.com/mahmoudsafaya8338/' target='_blank' rel='noreferrer'>
               <GrInstagram />
             </a></li>
-            <li><a href='https://github.com/MahmoudSafaya' target='_blank' rel='noreferrer'>
+            <li><a href='https://github.com/MahmoudSafaya?tab=repositories' target='_blank' rel='noreferrer'>
               <FaGithub />
             </a></li>
           </ul>

@@ -68,6 +68,10 @@ img{
   }
 }
 
+.mr-20{
+  margin-right: 20px;
+}
+
 .perGreen{
   color: $persianGreen !important;
 }
@@ -115,6 +119,11 @@ img{
   }
   &-column{
     flex-direction: column;
+
+    &-start{
+      justify-content: center;
+      align-items: flex-start;
+    }
   }
 
   @media screen and (min-width: $tablet) {
