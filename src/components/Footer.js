@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <div className='container flex flex-center'>
-      <div className='social-media'>
+      <div className='my-social-media'>
           <ul>
             <li><a href='https://www.facebook.com/mahmoud.safaya.1/' target='_blank' rel='noreferrer'>
               <FaFacebookSquare />
