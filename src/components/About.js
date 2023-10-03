@@ -1,6 +1,6 @@
 import React from 'react'
-import {BsArrowRight} from "react-icons/bs";
-import Resume from '../assets/MahmoudSafayaResume.pdf'
+import { BsArrowRight } from "react-icons/bs";
+// import Resume from '../assets/MahmoudSafayaResume.pdf'
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
           </div>
         </section>
 
-      
+
         <section className='education-info'>
           <h2>Education</h2>
           <div className='inner-container'>
@@ -27,23 +27,31 @@ const About = () => {
           </div>
         </section>
 
-      
+
         <section className='skills'>
           <h2>Skills</h2>
           <div className='inner-container'>
             <ul>
               <li>HTML5 - CSS3</li>
               <li>javaScript - ES6</li>
+              <li>Typescript</li>
               <li>React.js</li>
+              <li>Next.js</li>
               <li>Redux.js</li>
               <li>Bootstarp - SASS</li>
               <li>TailwindCSS</li>
               <li>JSON - AJAX</li>
-              <li>GIT - GITHUB</li>
+              <li>GIT & GITHUB</li>
               <li>
                 {/* <a href={Resume} download='MahmoudSafayaResume.pdf' target='_blank' className='mr-20'>Download my Resume</a> */}
-                <a href='https://drive.google.com/file/d/1uXYXK9vLKt5zU4z8ZUm6Z6WqH1GR4rtc/view?usp=sharing' target='_blank'>Check out my Resume</a>
-                </li>
+                <a
+                  href='https://drive.google.com/file/d/1ttHJ5f-8XSPfrmCijtJnNfSoBjSAlDEn/view?usp=sharing'
+                  target='_blank'
+                  rel="noreferrer"
+                >
+                  Download my CV
+                </a>
+              </li>
             </ul>
           </div>
         </section>
